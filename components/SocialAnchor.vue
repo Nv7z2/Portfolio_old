@@ -1,7 +1,13 @@
 <template>
-  <a :href="href" class="social-anchor" target="_blank" :title="href" rel="noopener noreferrer">
+  <a
+    :href="href"
+    class="social-anchor"
+    target="_blank"
+    :title="href"
+    rel="noopener noreferrer"
+  >
     <img
-      :src="'icons/' + icon  + '.svg'"
+      :src="'icons/' + icon + '.svg'"
       class="social-anchor-icon"
       role="presentation"
     />
@@ -10,8 +16,10 @@
 
 <script setup lang="ts">
 defineProps<{
+  /** URL to the social media profile. */
   href: string;
-  icon: "github" | "linkedin" | "twitter";
+  /** Icon to display. */
+  icon: 'github' | 'linkedin' | 'twitter';
 }>();
 </script>
 
