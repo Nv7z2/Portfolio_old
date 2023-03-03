@@ -1,5 +1,5 @@
 @use 'colors';
-@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 html, body {
   margin: 0;
@@ -9,9 +9,21 @@ html, body {
 
 body {
   background-color: colors.$page-background;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: colors.$page-background;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: colors.$page-scrollbar-color;
+  }
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Cambay', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
