@@ -59,8 +59,11 @@ import TextWithBorder from '@/components/TextWithBorder.vue';
 </script>
 
 <style scoped lang="scss">
+@use '@/styles/colors.scss';
+
 h1 {
-  margin: 0;
+  margin: 0 0 1rem 0;
   font-weight: normal;
+  color: colors.$page-main-heading-color;
 }
 </style>
