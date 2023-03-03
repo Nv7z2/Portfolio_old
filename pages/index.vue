@@ -28,7 +28,10 @@
       <div class="social-info">
         <SocialAnchor href="https://github.com/Nv7z2" icon="github" />
         <SocialAnchor href="https://twitter.com/nv7z2" icon="twitter" />
-        <SocialAnchor href="https://www.linkedin.com/in/kacper-baran/" icon="linkedin" />
+        <SocialAnchor
+          href="https://www.linkedin.com/in/kacper-baran/"
+          icon="linkedin"
+        />
         <SocialAnchor href="https://ko-fi.com/nv7z2" icon="ko-fi" />
       </div>
     </Page-Section>
@@ -44,17 +47,21 @@
         <ContactMail mail="nv7z2@icloud.com" />.
       </p>
       <p>
-        Or find me on Discord at <TextWithBorder color="#5865f2">The polish alchemist#0366</TextWithBorder>.
+        Or find me on Discord at
+        <TextWithBorder color="#5865f2">
+          The polish alchemist#0366
+        </TextWithBorder>
+        .
       </p>
     </Page-Section>
   </main>
 </template>
 
 <script setup lang="ts">
+import ContactMail from '@/components/ContactMail.vue';
 import PageSection from '@/components/PageSection.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 import SocialAnchor from '@/components/SocialAnchor.vue';
-import ContactMail from '@/components/ContactMail.vue';
 import TextWithBorder from '@/components/TextWithBorder.vue';
 </script>
 

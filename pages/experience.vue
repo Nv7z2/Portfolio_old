@@ -19,6 +19,8 @@
 import type { ExperienceItemType } from '@/components/Experience/ExperienceItem.vue';
 import ExperienceItem from '@/components/Experience/ExperienceItem.vue';
 
+// In future this list will be fetched from an API. I promise.
+// TODO: Fetch experience list from API.
 const ExperienceList: ExperienceItemType[] = [
   {
     company: 'Dephug (self-employed)',

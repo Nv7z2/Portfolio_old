@@ -29,7 +29,7 @@ const projectsList: ProjectType[] = [
       "Basically the site you are currently on is my portfolio. You will find a minimalistic display of my projects and skills. I believe in simplicity and elegance, so I've kept the design clean and easy to navigate.",
     link: '/',
     tags: ['Vue.js', 'Nuxt.js', 'SCSS', 'Git'],
-  }
+  },
 ];
 </script>
 
