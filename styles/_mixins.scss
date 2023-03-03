@@ -1,0 +1,19 @@
+// I stole the breakpoints from https://testsigma.com/blog/css-breakpoints/
+
+@mixin mq($breakpoint: 'small') {
+  @if $breakpoint == 'small' {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == 'medium' {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == 'large' {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
