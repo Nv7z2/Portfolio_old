@@ -16,6 +16,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
+  /** Section's divider position. Default: 'none'. */
   divider?: 'top' | 'bottom' | 'both' | 'none';
 }>();
 
