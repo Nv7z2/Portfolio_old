@@ -19,7 +19,7 @@
 <script setup lang="ts">
 type Divider = {
   type: 'top' | 'bottom' | 'both' | 'none';
-  size: number;
+  size?: number;
 };
 
 const props = defineProps<{
