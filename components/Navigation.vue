@@ -7,9 +7,6 @@
       <li class="nav-element">
         <a href="/projects" class="nav-link">Projects</a>
       </li>
-      <li class="nav-element">
-        <a href="/contact" class="nav-link">Contact</a>
-      </li>
     </ul>
   </nav>
 </template>
@@ -22,6 +19,9 @@
 
 .nav {
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  height: fit-content;
 
   @include mq {
     padding: 1rem;
