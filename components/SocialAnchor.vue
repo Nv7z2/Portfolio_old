@@ -19,7 +19,7 @@ defineProps<{
   /** URL to the social media profile. */
   href: string;
   /** Icon to display. */
-  icon: 'github' | 'linkedin' | 'twitter';
+  icon: 'github' | 'linkedin' | 'twitter' | 'ko-fi';
 }>();
 </script>
 
