@@ -1,10 +1,10 @@
 <template>
   <div class="project">
     <a :href="link" rel="nofollow" class="project-name-anchor">
-      <img src="icons/link.svg" role="presentation" />
+      <img :src="'icons/link.svg'" role="presentation" />
       <h3 class="project-name">
         <span>{{ title }}</span>
-        <img src="icons/arrow.svg" role="presentation" />
+        <img :src="'icons/arrow.svg'" role="presentation" />
       </h3>
     </a>
     <p class="project-description">{{ description }}</p>

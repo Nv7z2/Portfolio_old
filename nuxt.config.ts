@@ -1,6 +1,14 @@
+import path from 'path';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+const config = defineNuxtConfig({
   alias: {
-    'icons': '/<rootDir>/public/icons',
-  }
-})
+    icons: path.resolve(__dirname, 'public/icons'),
+  },
+});
+
+export default {
+  target: 'server',
+  mode: 'static',
+  config,
+};
