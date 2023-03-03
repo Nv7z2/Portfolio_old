@@ -26,7 +26,7 @@ const projectsList: ProjectType[] = [
   {
     title: 'Portfolio website',
     description:
-      "Basically the site you are currently on is my portfolio. You will find a minimalistic display of my projects and skills. I believe in simplicity and elegance, so I've kept the design clean and easy to navigate. Please note that I was too lazy to implement a contact form, so if you need to get in touch with me, you'll have to do it the old-fashioned way. But don't let that stop you from exploring my work and finding out more about me.",
+      "Basically the site you are currently on is my portfolio. You will find a minimalistic display of my projects and skills. I believe in simplicity and elegance, so I've kept the design clean and easy to navigate.",
     link: '/',
     tags: ['Vue.js', 'Nuxt.js', 'SCSS', 'Git'],
   }

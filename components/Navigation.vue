@@ -25,6 +25,10 @@
 
   @include mq {
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: colors.$page-background;
   }
 }
 
@@ -33,6 +37,11 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+
+  @include mq {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .nav-element {

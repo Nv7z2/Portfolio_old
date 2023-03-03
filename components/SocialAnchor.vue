@@ -25,6 +25,7 @@ defineProps<{
 
 <style scoped lang="scss">
 @use '@/styles/colors';
+@use '@/styles/mixins' as *;
 
 .social-anchor {
   display: inline-flex;
@@ -42,11 +43,20 @@ defineProps<{
 
   &:not(:last-child) {
     margin-right: 1rem;
+
+    @include mq {
+      margin-right: 0.5rem;
+    }
   }
 }
 
 .social-anchor-icon {
   width: 1.5rem;
   height: 1.5rem;
+
+  @include mq {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }
 </style>
