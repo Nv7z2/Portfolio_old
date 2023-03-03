@@ -7,6 +7,9 @@
       <li class="nav-element">
         <a href="/projects" class="nav-link">Projects</a>
       </li>
+      <li class="nav-element">
+        <a href="/experience" class="nav-link">Experience</a>
+      </li>
     </ul>
   </nav>
 </template>
