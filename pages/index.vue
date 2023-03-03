@@ -26,9 +26,9 @@
     <Page-Section :divider="{ type: 'top', size: 2 }">
       <SectionHeading :margin="1" prefix="🤙🏼">Social links</SectionHeading>
       <div class="social-info">
-        <SocialAnchor href="https://github.com" icon="github" />
-        <SocialAnchor href="https://twitter.com" icon="twitter" />
-        <SocialAnchor href="https://linkedin.com" icon="linkedin" />
+        <SocialAnchor href="https://github.com/Nv7z2" icon="github" />
+        <SocialAnchor href="https://twitter.com/nv7z2" icon="twitter" />
+        <SocialAnchor href="https://www.linkedin.com/in/kacper-baran/" icon="linkedin" />
         <SocialAnchor href="https://ko-fi.com/nv7z2" icon="ko-fi" />
       </div>
     </Page-Section>
