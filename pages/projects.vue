@@ -22,13 +22,13 @@ import Project from '@/components/Portfolio/Project.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 
 import axios from 'axios';
-import { reactive } from 'vue';
+import { ref, onMounted } from 'vue';
 
-let projectsList: ProjectType[] = reactive(new Array());
+let projectsList = ref<ProjectType[]>([]);
 
-useAsyncData(async () => {
-  const res = await axios.get(process.env.API_URL + '/projects');
-  projectsList = res.data;
+onMounted(async () => {
+  const res = await axios.get('https://portfolio-backend-4fnw.onrender.com/projects');
+  projectsList.value = res.data;
 });
 </script>
 

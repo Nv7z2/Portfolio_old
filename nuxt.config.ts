@@ -16,5 +16,8 @@ export default {
   env: {
     apiUrl: process.env.API_URL,
   },
+  build: {
+    vite: false,
+  },
   config,
 };
