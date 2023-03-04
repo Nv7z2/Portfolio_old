@@ -4,7 +4,8 @@
     <Page-Section :divider="{ type: 'top' }">
       <Project
         v-for="project in projectsList"
-        :key="project.title"
+        :id="project.id"
+        :key="project.id"
         :title="project.title"
         :description="project.description"
         :link="project.link"
@@ -20,17 +21,15 @@ import type { ProjectType } from '@/components/Portfolio/Project.vue';
 import Project from '@/components/Portfolio/Project.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 
-// In future this list will be fetched from an API. I promise.
-// TODO: Fetch projects list from API.
-const projectsList: ProjectType[] = [
-  {
-    title: 'Portfolio website',
-    description:
-      "Basically the site you are currently on is my portfolio. You will find a minimalistic display of my projects and skills. I believe in simplicity and elegance, so I've kept the design clean and easy to navigate.",
-    link: '/',
-    tags: ['Vue.js', 'Nuxt.js', 'SCSS', 'Git'],
-  },
-];
+import axios from 'axios';
+import { reactive } from 'vue';
+
+let projectsList: ProjectType[] = reactive(new Array());
+
+useAsyncData(async () => {
+  const res = await axios.get(process.env.API_URL + '/projects');
+  projectsList = res.data;
+});
 </script>
 
 <style scoped></style>

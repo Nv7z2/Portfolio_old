@@ -21,6 +21,7 @@
 import ProjectTag from './ProjectTag.vue';
 
 export type ProjectType = {
+  id: number,
   title: string;
   description: string;
   link: string;
