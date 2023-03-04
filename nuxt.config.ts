@@ -5,20 +5,19 @@ const config = defineNuxtConfig({
   alias: {
     icons: path.resolve(__dirname, 'public/icons'),
   },
-  modules: [
-    '@nuxtjs/dotenv',
-  ],
-  ssr: false,
 });
 
 export default {
   target: 'static',
   mode: 'static',
-  env: {
-    apiUrl: process.env.API_URL,
-  },
+  ssr: true,
   build: {
     vite: false,
+  },
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.NUXT_API_URL,
+    },
   },
   config,
 };

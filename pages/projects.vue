@@ -24,8 +24,9 @@ import SectionHeading from '@/components/SectionHeading.vue';
 import { ref } from 'vue';
 
 let projects = ref<ProjectType[]>([]);
+const config = useRuntimeConfig();
 
-await useFetch('https://portfolio-backend-4fnw.onrender.com/projects').then(
+await useFetch(config.public.apiBase + '/projects').then(
   (res) => (projects = res.data),
 );
 </script>
