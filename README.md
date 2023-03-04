@@ -20,6 +20,4 @@ This project was built using the following technologies:
 
 * Vue.js 3
 * Nuxt.js 3
-* Tailwind CSS
-* Vite.js
 * TypeScript
