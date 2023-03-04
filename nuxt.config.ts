@@ -7,7 +7,8 @@ const config = defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/dotenv',
-  ]
+  ],
+  ssr: false,
 });
 
 export default {
