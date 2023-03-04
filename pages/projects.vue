@@ -22,12 +22,14 @@ import Project from '@/components/Portfolio/Project.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 
 import axios from 'axios';
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
 let projectsList = ref<ProjectType[]>([]);
 
-onMounted(async () => {
-  const res = await axios.get('https://portfolio-backend-4fnw.onrender.com/projects');
+useAsyncData(async () => {
+  const res = await axios.get(
+    'https://portfolio-backend-4fnw.onrender.com/projects',
+  );
   projectsList.value = res.data;
 });
 </script>
