@@ -3,7 +3,7 @@
     <Section-Heading prefix="🗂" :margin="1">Projects</Section-Heading>
     <Page-Section :divider="{ type: 'top' }">
       <Project
-        v-for="project in projectsList"
+        v-for="project in projects"
         :id="project.id"
         :key="project.id"
         :title="project.title"
@@ -21,17 +21,13 @@ import type { ProjectType } from '@/components/Portfolio/Project.vue';
 import Project from '@/components/Portfolio/Project.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 
-import axios from 'axios';
 import { ref } from 'vue';
 
-let projectsList = ref<ProjectType[]>([]);
+let projects = ref<ProjectType[]>([]);
 
-useAsyncData(async () => {
-  const res = await axios.get(
-    'https://portfolio-backend-4fnw.onrender.com/projects',
-  );
-  projectsList.value = res.data;
-});
+await useFetch('https://portfolio-backend-4fnw.onrender.com/projects').then(
+  (res) => (projects = res.data),
+);
 </script>
 
 <style scoped></style>
