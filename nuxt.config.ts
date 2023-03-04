@@ -8,11 +8,10 @@ const config = defineNuxtConfig({
   modules: [
     '@nuxtjs/dotenv',
   ],
-  ssr: false,
 });
 
 export default {
-  target: 'server',
+  target: 'static',
   mode: 'static',
   env: {
     apiUrl: process.env.API_URL,
