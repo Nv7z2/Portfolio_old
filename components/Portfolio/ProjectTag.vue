@@ -8,6 +8,7 @@
 
 <style scoped lang="scss">
 @use '@/styles/colors';
+@use '@/styles/mixins' as *;
 
 .project-tag {
   cursor: crosshair;
@@ -20,6 +21,12 @@
   color: colors.$project-tag-text-color;
   background-color: colors.$project-tag-background-color;
   transition: background-color 0.2s ease;
+
+  @include mq {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
 
   &:hover {
     background-color: colors.$project-tag-background-color-hover;
