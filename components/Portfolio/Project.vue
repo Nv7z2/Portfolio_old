@@ -59,7 +59,7 @@
 import ProjectTag from './ProjectTag.vue';
 
 export type ProjectType = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   previewLink?: string;
