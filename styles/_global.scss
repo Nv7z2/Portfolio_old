@@ -11,15 +11,7 @@ body {
   background-color: colors.$page-background;
 
   &::-webkit-scrollbar {
-    width: 0.25rem;
-  }
-  
-  &::-webkit-scrollbar-track {
-    background: colors.$page-background;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: colors.$page-scrollbar-color;
+    width: 0;
   }
 }
 
