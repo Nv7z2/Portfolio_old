@@ -76,11 +76,11 @@ defineProps<ProjectType>();
 .project {
   padding: 3rem 0;
 
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     border-top: 1px solid #333;
   }
 
-  &:first-child {
+  &:first-of-type {
     padding-top: 0;
   }
 }
