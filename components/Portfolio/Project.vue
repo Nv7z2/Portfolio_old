@@ -48,15 +48,15 @@
     </ul>
 
     <div class="project-tags">
-      <Project-Tag v-for="tag in tags" :key="tag">
+      <Tag v-for="tag in tags" :key="tag">
         {{ tag }}
-      </Project-Tag>
+      </Tag>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ProjectTag from './ProjectTag.vue';
+import Tag from '../Tag.vue';
 
 export type ProjectType = {
   id: string;
