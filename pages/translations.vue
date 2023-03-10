@@ -27,6 +27,15 @@ const config = useRuntimeConfig();
 await useFetch(config.public.apiBase + '/translations').then(
   (res) => (translations = res.data),
 );
+
+useServerSeoMeta({
+  title: 'Kacper Baran | Translations',
+  ogTitle: 'Kacper Baran | Translations',
+  description:
+    "Translations I've made for indie games and other projects. All of them were translated from English to Polish.",
+  ogDescription:
+    "Translations I've made for indie games and other projects. All of them were translated from English to Polish.",
+});
 </script>
 
 <style scoped lang="scss"></style>
