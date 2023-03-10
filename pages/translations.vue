@@ -32,9 +32,9 @@ useServerSeoMeta({
   title: 'Kacper Baran | Translations',
   ogTitle: 'Kacper Baran | Translations',
   description:
-    "Translations I've made for indie games and other projects. All of them were translated from English to Polish.",
+    'Are you an indie game developer looking for an expert translator to help you expand your audience in Poland? Look no further!',
   ogDescription:
-    "Translations I've made for indie games and other projects. All of them were translated from English to Polish.",
+    'Are you an indie game developer looking for an expert translator to help you expand your audience in Poland? Look no further!',
 });
 </script>
 
