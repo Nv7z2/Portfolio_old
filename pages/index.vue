@@ -63,6 +63,15 @@ import PageSection from '@/components/PageSection.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 import SocialAnchor from '@/components/SocialAnchor.vue';
 import TextWithBorder from '@/components/TextWithBorder.vue';
+
+useServerSeoMeta({
+  title: 'Kacper Baran | Portfolio',
+  ogTitle: 'Kacper Baran | Portfolio',
+  description:
+    'My personal portfolio website. Includes projects, experience history and contact information.',
+  ogDescription:
+    'My personal portfolio website. Includes projects, experience history and contact information.',
+});
 </script>
 
 <style scoped lang="scss">
