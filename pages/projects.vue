@@ -30,6 +30,15 @@ const config = useRuntimeConfig();
 await useFetch(config.public.apiBase + '/projects').then(
   (res) => (projects = res.data),
 );
+
+useServerSeoMeta({
+  title: 'Kacper Baran | Projects',
+  ogTitle: 'Kacper Baran | Projects',
+  description:
+    "Projects I've made or contributed to. Most of them are open-source and available on GitHub.",
+  ogDescription:
+    "Projects I've made or contributed to. Most of them are open-source and available on GitHub.",
+});
 </script>
 
 <style scoped></style>
