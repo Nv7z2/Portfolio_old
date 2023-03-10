@@ -27,6 +27,15 @@ const config = useRuntimeConfig();
 await useFetch(config.public.apiBase + '/experiences').then(
   (res) => (experiences = res.data),
 );
+
+useServerSeoMeta({
+  title: 'Kacper Baran | Experience',
+  ogTitle: 'Kacper Baran | Experience',
+  description:
+    'Experience I have in the field of web development. I have been working as a freelancer for over 2 years.',
+  ogDescription:
+    'Experience I have in the field of web development. I have been working as a freelancer for over 2 years.',
+});
 </script>
 
 <style scoped lang="scss"></style>
