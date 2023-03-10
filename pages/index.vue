@@ -68,9 +68,9 @@ useServerSeoMeta({
   title: 'Kacper Baran | Portfolio',
   ogTitle: 'Kacper Baran | Portfolio',
   description:
-    'My personal portfolio website. Includes projects, experience history and contact information.',
+    "Hi, I'm Kacper, welcome to my website. I'm an experienced web developer with over 3 years of experience looking for a job or contract.",
   ogDescription:
-    'My personal portfolio website. Includes projects, experience history and contact information.',
+    "Hi, I'm Kacper, welcome to my website. I'm an experienced web developer with over 3 years of experience looking for a job or contract.",
 });
 </script>
 
