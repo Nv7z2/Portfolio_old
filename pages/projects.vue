@@ -22,6 +22,8 @@ import type { ProjectType } from '@/components/Portfolio/Project.vue';
 import Project from '@/components/Portfolio/Project.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 
+import ogImage from '@/public/openGraph/projects.png';
+
 import { ref } from 'vue';
 
 let projects = ref<ProjectType[]>([]);
@@ -38,6 +40,7 @@ useServerSeoMeta({
     "Projects I've made or contributed to. Most of them are open-source and available on GitHub.",
   ogDescription:
     "Projects I've made or contributed to. Most of them are open-source and available on GitHub.",
+  ogImage,
 });
 </script>
 
