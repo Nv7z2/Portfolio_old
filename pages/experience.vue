@@ -19,6 +19,8 @@
 import type { ExperienceItemType } from '@/components/Experience/ExperienceItem.vue';
 import ExperienceItem from '@/components/Experience/ExperienceItem.vue';
 
+import ogImage from '@/public/openGraph/experience.png';
+
 import { ref } from 'vue';
 
 let experiences = ref<ExperienceItemType[]>([]);
@@ -35,6 +37,7 @@ useServerSeoMeta({
     'Experience I have in the field of web development. I have been working as a freelancer for over 2 years.',
   ogDescription:
     'Experience I have in the field of web development. I have been working as a freelancer for over 2 years.',
+  ogImage,
 });
 </script>
 
