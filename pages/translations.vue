@@ -19,6 +19,8 @@
 import type { TranslationItemType } from '@/components/Translations/TranslationItem.vue';
 import TranslationItem from '@/components/Translations/TranslationItem.vue';
 
+import ogImage from '@/public/openGraph/translations.png';
+
 import { ref } from 'vue';
 
 let translations = ref<TranslationItemType[]>([]);
@@ -35,6 +37,7 @@ useServerSeoMeta({
     'Are you an indie game developer looking for an expert translator to help you expand your audience in Poland? Look no further!',
   ogDescription:
     'Are you an indie game developer looking for an expert translator to help you expand your audience in Poland? Look no further!',
+  ogImage,
 });
 </script>
 
