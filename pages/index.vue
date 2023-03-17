@@ -44,7 +44,7 @@
       </p>
       <p>
         But if you want to get in touch, you can send me an email at
-        <ContactMail mail="nv7z2@icloud.com" />.
+        <ContactMail mail="kontakt@kacperbaran.pl" />.
       </p>
       <p>
         Or find me on Discord at
