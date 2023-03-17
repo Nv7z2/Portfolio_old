@@ -64,6 +64,8 @@ import SectionHeading from '@/components/SectionHeading.vue';
 import SocialAnchor from '@/components/SocialAnchor.vue';
 import TextWithBorder from '@/components/TextWithBorder.vue';
 
+import ogImage from '@/public/openGraph/index.png';
+
 useServerSeoMeta({
   title: 'Kacper Baran | Portfolio',
   ogTitle: 'Kacper Baran | Portfolio',
@@ -71,6 +73,7 @@ useServerSeoMeta({
     "Hi, I'm Kacper, welcome to my website. I'm an experienced web developer with over 3 years of experience looking for a job or contract.",
   ogDescription:
     "Hi, I'm Kacper, welcome to my website. I'm an experienced web developer with over 3 years of experience looking for a job or contract.",
+  ogImage,
 });
 </script>
 
